@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video games</title>
+    <link rel="stylesheet" href="stil.css">  
+</head>
+<body>
+    <section class="showcase">
+        <header>
+                <h2 class="logo">The Magic of games</h2>
+                <div class="toggle"></div>
+        </header>
+        <video src="video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2 style="margin-top: 400px;margin-right: 500px;">Successfully respawned</h2>
+            <h3>Try one of the first game ever made or explore to learn more </h3>
+            <a href="#">Pong</a>
+        </div>
+        
+    </section> 
+    <div class="menu">
+      <ul>
+        <li><a href="history.html">Brief History</li>
+        <li><a href="Genras.html">Genres</a></li>
+        <li><a href="OldGames.html">Old games</a></li>
+        <li><a href="NewGeneration.html">New generation</a></li>
+        <li><a href="Mytop.html">My top 10</a></li>
+      </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+   </script>
+
+</body>
+</html>
